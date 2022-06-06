@@ -1,6 +1,6 @@
 {
   "name": "solar-system",
-  "homepage": "https://Tomas-Breuckmann.github.io/solar-system",
+  "homepage": "https://tomas-breuckmann.github.io/solar-system",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -25,12 +25,7 @@
     "lint:styles": "npx stylelint '**/*.css'",
     "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+
   "browserslist": {
     "production": [
       ">0.2%",
