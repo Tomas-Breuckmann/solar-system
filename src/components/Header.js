@@ -4,7 +4,7 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <h1>Sistema Solar</h1>
+        <h1 className="bg-red-500">Sistema Solar</h1>
       </header>
     );
   }
