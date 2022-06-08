@@ -1,11 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components'
+
+const H1=styled.h1`
+  text-align: center;
+`
 
 class Title extends React.Component {
   render() {
     const { headline } = this.props;
     return (
-      <h2 className="titulos">{headline}</h2>
+      <H1>{headline}</H1>
     );
   }
 }

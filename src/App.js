@@ -11,7 +11,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="bg-red-500">With tailwind</h1>
         <Header />
         <SolarSystem />
         <Missions />

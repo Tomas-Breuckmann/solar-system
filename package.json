@@ -1,6 +1,5 @@
 {
   "name": "solar-system",
-  "homepage": "https://Tomas-Breuckmann.github.io/solar-system",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -14,18 +13,16 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
+    "styled-components": "^5.3.5",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint:styles": "npx stylelint '**/*.css'",
     "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx"
   },
-
   "browserslist": {
     "production": [
       ">0.2%",
