@@ -3,21 +3,14 @@ import Title from './Title';
 import missions from '../data/missions';
 import MissionCard from './MissionCard';
 import styled from 'styled-components'
-
-const Miss=styled.main`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-`
+import { MissionMain, MissionContent } from './Missions.styles';
 
 class Missions extends React.Component {
   render() {
     return (
-      <div>
+      <MissionMain>
         <Title headline="Missões" />
-        <Miss>
+        <MissionContent>
         {missions.map((mission) => (
           <div key={ mission.name }>
             <MissionCard
@@ -28,8 +21,8 @@ class Missions extends React.Component {
               />
           </div>
         ))}
-        </Miss>
-      </div>
+        </MissionContent>
+      </MissionMain>
     );
   }
 }

@@ -1,7 +1,25 @@
 import styled from 'styled-components';
 import { AiFillCaretRight, AiFillCaretLeft } from 'react-icons/ai';
+import { BasicMain, BasicContent } from '../GeneralStyles';
+import backGround from '../images/background.png';
 
-export const Div = styled.div`
+export const PlanetMain = styled(BasicMain)`
+background-image: url(${backGround});
+color: var(--g3);
+`;
+
+export const PlanetContent = styled(BasicContent)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+    p {
+        text-align: center;
+        text-transform: uppercase;
+    }
+`;
+
+/* export const Div = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +29,7 @@ export const Div = styled.div`
         text-align: center;
         text-transform: uppercase;
     }
-`
+` */
 
 export const Img = styled.img`
     width: 300px;

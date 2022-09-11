@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react';
-import { Div, Img, Avanca, Recua } from './PlanetsCarousel.styles.js';
+import { PlanetMain, PlanetContent, Img, Avanca, Recua } from './PlanetsCarousel.styles.js';
 import planets from '../data/planets';
+import Title from './Title';
 
 const planetsNumber = planets.length;
 
@@ -22,7 +23,9 @@ function PlanetsCarousel() {
     }
 
     return (
-        <Div>
+        <PlanetMain>
+        <Title headline="Planetas" />
+        <PlanetContent>
             {/* <img src={img1Url} alt='imagem da url'/> */}
             <Recua onClick={() => handleImageRecua(imageIndex)}></Recua>
             <div>
@@ -30,7 +33,8 @@ function PlanetsCarousel() {
                 <p className="legend">{planets[imageIndex].name}</p>
             </div>
             <Avanca onClick={() => handleImageAvanca(imageIndex)}></Avanca>
-        </Div>
+        </PlanetContent>
+        </PlanetMain>
     );
 };
 
