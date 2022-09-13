@@ -23,9 +23,11 @@ const Global = createGlobalStyle`
       --g11: rgba(40, 41, 40, 1);
       --g12: rgba(20, 20, 20, 1);
       --g13: rgba(5, 5, 5, 1);
+      // AZUL
+      --darkBlue: #00021C;
 
       background-color: ${props => props.theme.colors.background};
-      color: ${props => props.theme.colors.text};;
+      color: ${props => props.theme.colors.text};
     }
 `;
 

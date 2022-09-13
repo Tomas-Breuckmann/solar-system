@@ -1,35 +1,29 @@
 import styled from 'styled-components';
 import { AiFillCaretRight, AiFillCaretLeft } from 'react-icons/ai';
 import { BasicMain, BasicContent } from '../Styles/GeneralStyles';
-import backGround from '../images/background.png';
+// import backGround from '../images//backgrounds/light.jpg';
 
 export const PlanetMain = styled(BasicMain)`
-background-image: url(${backGround});
+background-image: url(${props => props.theme.images.imgBackgroundPlanets});
+color: ${props => props.theme.colors.textPlanets};
 /* color: var(--g3); */
 `;
 
 export const PlanetContent = styled(BasicContent)`
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 60px;
     p {
         text-align: center;
         text-transform: uppercase;
     }
+    div {
+        display: flex;
+        align-items: center;
+        }
 `;
-
-/* export const Div = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 60px;
-    
-    p {
-        text-align: center;
-        text-transform: uppercase;
-    }
-` */
 
 export const Img = styled.img`
     width: 300px;

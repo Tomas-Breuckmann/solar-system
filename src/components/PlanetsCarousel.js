@@ -26,13 +26,13 @@ function PlanetsCarousel() {
         <PlanetMain>
         <Title headline="Planetas" />
         <PlanetContent>
+            <Img src={planets[imageIndex].image} alt="planet"/>
             {/* <img src={img1Url} alt='imagem da url'/> */}
-            <Recua onClick={() => handleImageRecua(imageIndex)}></Recua>
             <div>
-                <Img src={planets[imageIndex].image} alt="planet"/>
+                <Recua onClick={() => handleImageRecua(imageIndex)}></Recua>
                 <p className="legend">{planets[imageIndex].name}</p>
+                <Avanca onClick={() => handleImageAvanca(imageIndex)}></Avanca>
             </div>
-            <Avanca onClick={() => handleImageAvanca(imageIndex)}></Avanca>
         </PlanetContent>
         </PlanetMain>
     );

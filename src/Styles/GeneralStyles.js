@@ -10,5 +10,5 @@ export const BasicContent = styled.div`
     gap: 20px;
     width: 90%;
     margin: 0 auto;
-    /* background-color:red;s */
+    /* background-color: red; */
 `;

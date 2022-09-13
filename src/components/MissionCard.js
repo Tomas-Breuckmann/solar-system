@@ -14,7 +14,8 @@ const CardM=styled.div`
   h4 {
     margin: 12px;
     padding: 4px 0;
-    background-color: var(--g11);
+    background-color: ${props => props.theme.colors.missionsTitleBack};
+    color: ${props => props.theme.colors.textPlanets};
     width: 100%;
     text-align: center}
 `
