@@ -1,8 +1,10 @@
 import styled from 'styled-components';
-import { BasicMain, BasicContent  } from '../GeneralStyles';
+import { BasicMain, BasicContent  } from '../Styles/GeneralStyles';
 
 export const MissionMain = styled(BasicMain)`
-background-color: var(--g4)
+/* background-color: var(--g13); */
+border-top: 2px solid var(--g11);
+border-bottom: 2px solid var(--g11);
 `;
 
 export const MissionContent = styled(BasicContent)`

@@ -13,7 +13,8 @@ const CardM=styled.div`
   p { margin: 4px}
   h4 {
     margin: 12px;
-    background-color: rgb(100,100,100,0.4);
+    padding: 4px 0;
+    background-color: var(--g11);
     width: 100%;
     text-align: center}
 `
