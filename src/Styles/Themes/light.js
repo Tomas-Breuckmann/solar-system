@@ -10,5 +10,10 @@ export default {
     },
     images: {
         imgBackgroundPlanets: backGround,
+    },
+    changeThemeButton: {
+        background: 'var(--g13)',
+        color: 'var(--g1)'
     }
+
 }

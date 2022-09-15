@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Missions from './components/Missions';
 import PlanetsCarousel from './components/PlanetsCarousel';
@@ -7,19 +7,21 @@ import { ThemeProvider } from 'styled-components'
 import light from './Styles/Themes/light';
 import dark from './Styles/Themes/dark';
 
-class App extends React.Component {
-  render() {
+function App() {
+    const [theme, setTheme] = useState(light);
+    const changeTheme = () => {
+      setTheme(theme.title === 'light' ? dark : light);
+    }
     return (
-      <ThemeProvider theme={dark}>
+      <ThemeProvider theme={theme}>
         <div>
           <Global />
-          <Header />
+          <Header changeTheme={changeTheme}/>
           <PlanetsCarousel />
           <Missions />
         </div>
       </ThemeProvider>
     );
   }
-}
 
 export default App;

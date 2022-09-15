@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Title from './Title';
-import { HeaderMain, HeaderContent } from './Header.styles';
+import { HeaderMain, HeaderContent, Button } from './Header.styles';
+import { ThemeContext } from 'styled-components';
 
 const headline = 'Sistema Solar'
-class Header extends React.Component {
-  render() {
+function Header({ changeTheme }) {
+    const { title } = useContext(ThemeContext);
+    const buttonTitle = title === 'light' ? 'DARK' : 'LIGHT';
     return (
       <HeaderMain>
         <HeaderContent>
-          <Title headline={ headline }/>        
+          <Title headline={ headline }/>
+          <Button onClick={changeTheme}>{buttonTitle}</Button>
         </HeaderContent>
       </HeaderMain>
     );
   }
-}
 
 export default Header;

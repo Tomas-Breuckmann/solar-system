@@ -1,7 +1,7 @@
 import backGround from '../../images/backgrounds/dark.jpg';
 
 export default {
-    title: 'light',
+    title: 'dark',
     colors: {
         background: 'var(--g13)',
         text: 'var(--g2)',
@@ -10,5 +10,10 @@ export default {
     },
     images: {
         imgBackgroundPlanets: backGround,
+    },
+    changeThemeButton: {
+        background: 'var(--g1)',
+        color: 'var(--g13)'
     }
+
 }
