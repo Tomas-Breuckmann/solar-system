@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { AiFillCaretRight, AiFillCaretLeft } from 'react-icons/ai';
 import { BasicMain, BasicContent } from '../Styles/GeneralStyles';
-// import backGround from '../images//backgrounds/light.jpg';
 
 export const PlanetMain = styled(BasicMain)`
 background-image: url(${props => props.theme.images.imgBackgroundPlanets});

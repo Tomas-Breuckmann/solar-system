@@ -12,3 +12,8 @@ export const BasicContent = styled.div`
     margin: 0 auto;
     /* background-color: red; */
 `;
+
+export const St = styled.strong`
+    font-weight: 700;
+    color: ${props => props.theme.colors.strong};
+`;

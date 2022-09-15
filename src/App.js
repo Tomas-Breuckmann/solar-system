@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { ThemeProvider } from 'styled-components'
 import Header from './components/Header';
 import Missions from './components/Missions';
 import PlanetsCarousel from './components/PlanetsCarousel';
 import Global from './Styles/GlobalStyles';
-import { ThemeProvider } from 'styled-components'
+import Footer from './components/Footer';
 import light from './Styles/Themes/light';
 import dark from './Styles/Themes/dark';
 
@@ -19,6 +20,7 @@ function App() {
           <Header changeTheme={changeTheme}/>
           <PlanetsCarousel />
           <Missions />
+          <Footer />
         </div>
       </ThemeProvider>
     );

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Title from './Title';
-import { HeaderMain, HeaderContent, Button } from './Header.styles';
+import { HeaderMain, HeaderContent, Button, Link } from './Header.styles';
 import { ThemeContext } from 'styled-components';
 
 const headline = 'Sistema Solar'
@@ -11,7 +11,10 @@ function Header({ changeTheme }) {
       <HeaderMain>
         <HeaderContent>
           <Title headline={ headline }/>
-          <Button onClick={changeTheme}>{buttonTitle}</Button>
+          <Link>
+              <a href="#footer">CONTATOS</a>
+              <Button onClick={changeTheme}>{buttonTitle}</Button>
+          </Link>
         </HeaderContent>
       </HeaderMain>
     );
