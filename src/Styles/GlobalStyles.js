@@ -28,6 +28,9 @@ const Global = createGlobalStyle`
 
       background-color: ${props => props.theme.colors.background};
       color: ${props => props.theme.colors.text};
+
+  scroll-behavior: smooth;
+
     }
 `;
 

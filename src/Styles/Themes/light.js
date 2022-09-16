@@ -16,8 +16,8 @@ export default {
         footerBackground: footerBack,
     },
     changeThemeButton: {
-        background: 'var(--g13)',
-        color: 'var(--g1)'
+        background: '#999',
+        color: '#222'
     }
 
 }
