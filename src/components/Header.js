@@ -21,6 +21,7 @@ function Header({ changeTheme }) {
                 uncheckedIcon={false}
                 height={12}
                 width={32}
+                handleDiameter={16}
                 offColor={changeThemeButton.background}
                 onColor={changeThemeButton.background}
                 onHandleColor={changeThemeButton.color}

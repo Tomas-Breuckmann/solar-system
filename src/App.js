@@ -7,9 +7,10 @@ import Global from './Styles/GlobalStyles';
 import Footer from './components/Footer';
 import light from './Styles/Themes/light';
 import dark from './Styles/Themes/dark';
+import useStateWithLocal from './Hooks/useStateWithLocal';
 
 function App() {
-    const [theme, setTheme] = useState(light);
+    const [theme, setTheme] = useStateWithLocal('theme', light);
     const changeTheme = () => {
       setTheme(theme.title === 'light' ? dark : light);
     }

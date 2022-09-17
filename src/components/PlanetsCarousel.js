@@ -1,12 +1,14 @@
-import React, { Component, useState } from 'react';
-import { PlanetMain, PlanetContent, Img, Avanca, Recua } from './PlanetsCarousel.styles.js';
+import React, { useState } from 'react';
+import { PlanetMain, PlanetContent, Avanca, Recua } from './PlanetsCarousel.styles.js';
 import planets from '../data/planets';
 import Title from './Title';
+import Image from './Image.js';
 
 const planetsNumber = planets.length;
 
 function PlanetsCarousel() {
     const [imageIndex, setIndex] = useState(0);
+    const src = planets[imageIndex].image;
 
     const handleImageAvanca = (index) => {
         console.log(index);
@@ -26,7 +28,7 @@ function PlanetsCarousel() {
         <PlanetMain>
         <Title headline="Planetas" />
         <PlanetContent>
-            <Img src={planets[imageIndex].image} alt="planet"/>
+            <Image src={src} />
             {/* <img src={img1Url} alt='imagem da url'/> */}
             <div>
                 <Recua onClick={() => handleImageRecua(imageIndex)}></Recua>

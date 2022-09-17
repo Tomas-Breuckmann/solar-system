@@ -7,7 +7,7 @@ export const HeaderMain = styled(BasicMain)`
     `;
 
 export const HeaderContent = styled(BasicContent)`
-    font-family: 'Euphoria Script', cursive;
+    /* font-family: 'Euphoria Script', cursive; */
     font-size: 20px;
     display: flex;
     align-items: center;
